@@ -2,6 +2,7 @@ Jericko B. Bacar\
 BS Computer Science\
 https://cmsc100-laboratory.github.io/02-my-github-page-adorablehobbit33/
 \
+\
 Steps how to create Github page:
 1. Go to your repository
 2. Click "Settings"
@@ -11,5 +12,5 @@ Steps how to create Github page:
 6. Wait for your live page to load
 7. Click the link to see your static wesbite
 
-Takeaways\
+Takeaways
 - Creating a personal profile is fun and cool.

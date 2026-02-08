@@ -1,0 +1,26 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100vh;
+}
+#main-content{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  gap: 40px;
+  border-top: 1px solid rgba(211, 211, 211, 0.082);
+  border-bottom: 1px solid rgba(211, 211, 211, 0.082);
+  background-color: #212121;
+  backdrop-filter: blur(20px);
+}
+
+div#main-content{
+  padding: 10px 100px;
+  margin: 0 10px;
+}

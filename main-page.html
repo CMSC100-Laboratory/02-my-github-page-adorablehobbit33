@@ -13,54 +13,105 @@
     <title>Hobbit AI</title>
 </head>
 <body>
-    <nav class="nav-bar card-style">
-        <div class="left-section">
-            <a href="index.html">
-                <i class="fa-solid fa-house" style="color: #ffffff;"></i>
-            </a>
-                
-            <i class="fa-solid fa-circle-user" style="color: #ffffff;"></i>
-            <i class="fa-solid fa-inbox" style="color: #ffffff;"></i>
-            <i class="fa-solid fa-cloud" style="color: #ffffff;"></i>
-        </div>
-        <div class="right-section">
-            <h3 class="hire-me">Hire Me</h3>
-        </div>
-    </nav>
-    <main class="card-style">
-        <div>
-            <h4>Full Stack Developer</h4>
-            <h5>AVAILABLE FOR WORK</h5>
-        </div>
-        <div>
-            <div>
-                <h3>I'm Jericko Bacar</h3>
-                <p>Full Stack Developer from Manila, Philippines</p>
-                <p>Currently studying at UP Los Banos</p>
-                <div>
-                    <h3 class="hire-me">Hire Me</h3>
-                    <h3 class="copy-email">Copy Email</h3>
+    <div id="left-content-container">
+        <nav class="nav-bar card-style">
+            <div class="left-section">
+                <a href="index.html">
+                    <i class="fa-solid fa-house" style="color: white; background-color: #333333;"></i>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-circle-user" style="color: #cbcbcb;"></i>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-inbox" style="color: #cbcbcb;"></i>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-cloud" style="color: #cbcbcb;"></i>
+                </a>
+            </div>
+            <div class="right-section">
+                <div class="hire-me">
+                    <div class="circle"></div>
+                    <h3>Hire Me</h3>
                 </div>
             </div>
-            <img src="db/image-1.jpg" alt="Profile" 
-                style=  "height: 150px; width: 150px;
-                        border-radius: 50%;
-                object-position: center bottom; 
-                        object-fit: cover;
-                flex-shrink: 0">
-        </div>
-        <div>
-            <div>
-                <h4>Projects</h4>
-                <h4>View All</h4>
+        </nav>
+        <main class="card-style" id="left-main-content">
+            <div style="display: flex; flex-direction: row; justify-content: space-between; padding: 0 15px;">
+                <div class="work-title">
+                    <div class="circle" style="width: 5px; height: 5px;"></div>
+                    <h4>Full Stack Developer</h4>
+                </div>
+                <div class="available-for-work">
+                    <div class="circle" style="background-color: #198457; width: 5px; height: 5px;"></div>
+                    <h5 style="color: #198457;">AVAILABLE FOR WORK</h5>
+                </div>
             </div>
-            <div>
-                <div>Project 1</div>
-                <div>Project 1</div>
-                <div>Project 1</div>
-                <div>Project 1</div>
+            <div class="profile-container">
+                <div class="profile-details">
+                    <h3 class="ubuntu-medium" style="font-size: 30px;">I'm Jericko Bacar</h3>
+                    <p>Full Stack Developer from Manila, Philippines.</p>
+                    <p>Currently studying at UP Los Baños.</p>
+                    <div class="hire-me-and-copy-email">
+                        <div class="hire-me">
+                            <div class="circle" style="width: 10px; height: 10px;"></div>
+                            <h3>Hire Me</h3>
+                        </div>
+                        <div class="copy-email">
+                            <div class="circle" style="width: 10px; height: 10px;"></div>
+                            <h3 style="font-size: 12px;">Copy Email</h3>
+                        </div>
+                    </div>
+                </div>
+                <img src="db/image-1.jpg" alt="Profile" 
+                    style=  "height: 150px; width: 150px;
+                            border-radius: 50%;
+                    object-position: center bottom; 
+                            object-fit: cover;
+                    flex-shrink: 0">
             </div>
-        </div>
-    </main>
+            <div class="projects-container">
+                <div class="projects-header">
+                    <div class="work-title">
+                        <div class="circle" style="width: 5px; height: 5px;"></div>
+                        <h4 style="margin: 0;">Projects</h4>
+                    </div>
+                    <div class="hire-me">
+                        <h4 style="margin: 7px 0; font-size: 12px;">View All</h4>
+                        <i class="fa-solid fa-arrow-right" style="color: #cbcbcb; font-size: 12px;"></i>    
+                    </div>
+                </div>
+                <div class="projects-summary">
+                    <div class="individual-projects">
+                        <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                        <div class="individual-projects-description">
+                            <h4>Publicity Materials</h4>
+                            <p style="color: #cbcbcb;">Product design, Icon design</p>
+                        </div>
+                        <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                    </div>
+                    <div class="individual-projects">
+                        <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                        <div class="individual-projects-description">
+                            <h4>Publicity Materials</h4>
+                            <p style="color: #cbcbcb;">Product design, Icon design</p>
+                        </div>
+                        <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                    </div>
+                    <div class="individual-projects">
+                        <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                        <div class="individual-projects-description">
+                            <h4>Publicity Materials</h4>
+                            <p style="color: #cbcbcb;">Product design, Icon design</p>
+                        </div>
+                        <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="right-content-container">
+        <div>hello</div>
+    </div>
 </body>
 </html>

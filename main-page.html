@@ -30,7 +30,7 @@
                 </a>
             </div>
             <div class="right-section">
-                <a href="./index.html">
+                <a href="https://www.linkedin.com/in/jericko-bacar-659189343/">
                     <div class="hire-me">
                         <div class="circle"></div>
                         <h3>Hire Me</h3>
@@ -55,18 +55,37 @@
                     <p>Full Stack Developer from Manila, Philippines.</p>
                     <p>Currently studying at UP Los Baños.</p>
                     <div class="hire-me-and-copy-email">
-                        <a href="../index.html">
+                        <a href="https://www.linkedin.com/in/jericko-bacar-659189343/">
                             <div class="hire-me">
                                 <div class="circle" style="width: 10px; height: 10px;"></div>
                             <h3>Hire Me</h3>
                         </a>
                         </div>
-                        <div class="copy-email">
+                        <div class="copy-email" id="copy-email">
                             <div class="circle" style="width: 10px; height: 10px;"></div>
                             <h3 style="font-size: 12px;">Copy Email</h3>
                         </div>
                     </div>
 
+                <script>
+                    // Elements
+                    const copyEmail = document.getElementById('copy-email');
+                    const text = "jbbacar1@up.edu.ph";
+
+                    // Click event, async
+                    copyEmail.addEventListener('click', async () => {
+                        try {
+                            // Write the email to the clipboard
+                            await navigator.clipboard.writeText(text);
+                            console.log('Text copied to clipboard successfully!');
+                        } catch (err) {
+                            console.error('Failed to copy text: ', err);
+                            // Handle cases where the Clipboard API is not available (e.g., HTTP sites)
+                            fallbackCopyTextToClipboard(text);
+                        }
+                    });
+                </script>
+                
                 </div>
                 <img src="db/image-1.jpg" alt="Profile" 
                     style=  "height: 150px; width: 150px;
@@ -88,7 +107,7 @@
                 </div>
                 <div class="projects-summary">
                     <div class="individual-projects">
-                        <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                        <img src="./db/keybr-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="keybr"></img>
                         <div class="individual-projects-description">
                             <h4>Typing Game</h4>
                             <p style="color: #cbcbcb;">A game where you complete a set of words. Using HTML, CSS, JS.</p>
@@ -96,7 +115,7 @@
                         <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
                     </div>
                     <div class="individual-projects">
-                        <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                        <img src="./db/icoc-ph.jpg" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="icocph"></img>
                         <div class="individual-projects-description">
                             <h4>ICOC PH Website</h4>
                             <p style="color: #cbcbcb;">A mock website of my Church. Using HTML, CSS, JS.</p>
@@ -104,7 +123,7 @@
                         <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
                     </div>
                     <div class="individual-projects">
-                        <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                        <img src="./db/python-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="python"></img>
                         <div class="individual-projects-description">
                             <h4>Typing Game</h4>
                             <p style="color: #cbcbcb;">A terminal based game where you complete a set of phrases. A leaderboard with persistence. Using Python.</p>
@@ -125,7 +144,7 @@
                 <div class="projects-container">
                     <div class="projects-summary">
                         <div class="individual-projects">
-                            <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                            <img src="./db/flutter-img.jpg" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="flutter"></img>
                             <div class="individual-projects-description">
                                 <h4>Mobile Development</h4>
                                 <p style="color: #cbcbcb;">Dart, Flutter</p>
@@ -133,7 +152,7 @@
                             <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
                         </div>
                         <div class="individual-projects">
-                            <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                            <img src="./db/web-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="web"></img>
                             <div class="individual-projects-description">
                                 <h4>Web Development</h4>
                                 <p style="color: #cbcbcb;">MERN, Figma, Canva</p>
@@ -141,7 +160,7 @@
                             <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
                         </div>
                         <div class="individual-projects">
-                            <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                            <img src="./db/assembly-img.jpg" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="asssembly"></img>
                             <div class="individual-projects-description">
                                 <h4>Machine-level Programming</h4>
                                 <p style="color: #cbcbcb;">Assembly</p>
@@ -176,7 +195,7 @@
                 <div class="projects-container">
                     <div class="projects-summary">
                         <div class="individual-projects">
-                            <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                            <img src="./db/google-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="google"></img>
                             <div class="individual-projects-description">
                                 <h4>Google Workspace</h4>
                                 <p style="color: #cbcbcb;">Drive, Docs, Sheets, Slides (With extension/Plug-in automation)</p>
@@ -184,7 +203,7 @@
                             <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
                         </div>
                         <div class="individual-projects">
-                            <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                            <img src="./db/bandlab-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="bandlab"></img>
                             <div class="individual-projects-description">
                                 <h4>Music Production</h4>
                                 <p style="color: #cbcbcb;">Bandlab</p>
@@ -192,7 +211,7 @@
                             <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
                         </div>
                         <div class="individual-projects">
-                            <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                            <img src="./db/ai-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="ai"></img>
                             <div class="individual-projects-description">
                                 <h4>Prompt Engineering</h4>
                                 <p style="color: #cbcbcb;">ChatGPT, CursorAI, GeminiAI</p>
@@ -212,7 +231,7 @@
                 <div class="projects-container">
                     <div class="projects-summary">
                         <div class="individual-projects">
-                            <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                            <img src="./db/keybr-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="keybr"></img>
                             <div class="individual-projects-description">
                                 <h4>Typing Game</h4>
                                 <p style="color: #cbcbcb;">A game where you complete a set of words. Using HTML, CSS, JS.</p>
@@ -220,7 +239,7 @@
                             <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
                         </div>
                         <div class="individual-projects">
-                            <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                            <img src="./db/icoc-ph.jpg" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="icoc"></img>
                             <div class="individual-projects-description">
                                 <h4>ICOC PH Website</h4>
                                 <p style="color: #cbcbcb;">A mock website of my Church. Using HTML, CSS, JS.</p>
@@ -228,7 +247,7 @@
                             <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
                         </div>
                         <div class="individual-projects">
-                            <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                            <img src="./db/python-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="python"></img>
                             <div class="individual-projects-description">
                                 <h4>Typing Game</h4>
                                 <p style="color: #cbcbcb;">A terminal based game where you complete a set of phrases. A leaderboard with persistence. Using Python.</p>
@@ -236,7 +255,7 @@
                             <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
                         </div>
                         <div class="individual-projects">
-                            <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                            <img src="./db/cafe-img.jpg" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="cafe"></img>
                             <div class="individual-projects-description">
                                 <h4>Online Cafe System</h4>
                                 <p style="color: #cbcbcb;">An online system that simulates a real-life cafe. Using Java.</p>
@@ -244,7 +263,7 @@
                             <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
                         </div>
                         <div class="individual-projects">
-                            <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                            <img src="./db/r-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="r"></img>
                             <div class="individual-projects-description">
                                 <h4>Project Mitigation</h4>
                                 <p style="color: #cbcbcb;">A program where you select different projects to see if it is feasible. Using R and Rshiny.</p>
@@ -264,7 +283,7 @@
                 <div class="projects-container">
                     <div class="projects-summary">
                         <div class="individual-projects">
-                            <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                            <img src="./db/image-1.jpg" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="jericko"></img>
                             <div class="individual-projects-description">
                                 <h4>Student</h4>
                                 <p style="color: #cbcbcb;">BS Computer Science | University of the Philippines Los Baños</p>
@@ -272,7 +291,7 @@
                             <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
                         </div>
                         <div class="individual-projects">
-                            <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                            <img src="./db/icoc-ph.jpg" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="icoc"></img>
                             <div class="individual-projects-description">
                                 <h4>Tech & Music Committee </h4>
                                 <p style="color: #cbcbcb;">ICOC Philippines</p>
@@ -280,7 +299,7 @@
                             <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
                         </div>
                         <div class="individual-projects">
-                            <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                            <img src="./db/acss-img.jpg" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="acss"></img>
                             <div class="individual-projects-description">
                                 <h4>Academic Committee</h4>
                                 <p style="color: #cbcbcb;">ACSS of UPLB</p>
@@ -288,7 +307,7 @@
                             <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
                         </div>
                         <div class="individual-projects">
-                            <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                            <img src="./db/silakbo-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="silakbo"></img>
                             <div class="individual-projects-description">
                                 <h4>Guitarist</h4>
                                 <p style="color: #cbcbcb;">UP Silakbo</p>
@@ -308,7 +327,7 @@
                 <div class="projects-container">
                     <div class="projects-summary">
                         <div class="individual-projects">
-                            <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                            <img src="./db/web-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="web"></img>
                             <div class="individual-projects-description">
                                 <h4>Web Development</h4>
                                 <p style="color: #cbcbcb;">HTML, CSS, JS</p>
@@ -316,7 +335,7 @@
                             <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
                         </div>
                         <div class="individual-projects">
-                            <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                            <img src="./db/python-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="python"></img>
                             <div class="individual-projects-description">
                                 <h4>Game Development</h4>
                                 <p style="color: #cbcbcb;">Python, Tkinter</p>
@@ -324,7 +343,7 @@
                             <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
                         </div>
                         <div class="individual-projects">
-                            <div class="circle" style="height: 50px; width: 50px; margin: 10px 0;"></div>
+                            <img src="./db/r-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="r"></img>
                             <div class="individual-projects-description">
                                 <h4>Data Analytics</h4>
                                 <p style="color: #cbcbcb;">R, Python</p>

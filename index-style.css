@@ -14,20 +14,21 @@ body{
   width: fit-content;
   height: fit-content;
   gap: 40px;
-  border-top: 1px solid rgba(211, 211, 211, 0.082);
-  border-bottom: 1px solid rgba(211, 211, 211, 0.082);
+  border: 1px solid rgba(211, 211, 211, 0.082);
+  border-radius: 10px;
   background-color: #212121;
   backdrop-filter: blur(20px);
   transition: 300ms ease;
+  scale: 0.95;
 }
 
 #main-content:hover{
-  scale: 1.1;
+  scale: 1;
   transition: 300ms ease;
   cursor: pointer;
 }
 
 div#main-content{
-  padding: 10px 100px;
+  padding: 20px 100px;
   margin: 0 10px;
 }

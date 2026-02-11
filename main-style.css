@@ -168,7 +168,7 @@
     flex-direction: column;
 }
 
-.projects-summary > div{
+.projects-summary > a{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;

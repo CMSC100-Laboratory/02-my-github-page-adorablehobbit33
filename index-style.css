@@ -18,6 +18,13 @@ body{
   border-bottom: 1px solid rgba(211, 211, 211, 0.082);
   background-color: #212121;
   backdrop-filter: blur(20px);
+  transition: 300ms ease;
+}
+
+#main-content:hover{
+  scale: 1.1;
+  transition: 300ms ease;
+  cursor: pointer;
 }
 
 div#main-content{

@@ -1,0 +1,99 @@
+*{
+    /* outline: 1px red solid; */
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:active{
+  color: white;
+}
+a:visited{
+  color: white;
+}
+
+body, html{
+  background-color: #161616;
+  color: white;
+  margin: 0;
+}
+
+::-webkit-scrollbar { /* scroll bar*/
+  width: 5px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track { /* scroll bar background*/
+  background: none;
+}
+::-webkit-scrollbar-thumb { /* scroll bar*/
+  background: #696969;
+  border-radius: 4px;
+}
+
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ubuntu-regular-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-medium-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.card-style{
+  padding: 20px 7px;
+  border-radius: 10px;
+  margin: 10px 0;
+  background-color: #212121;
+  border: 0.5px solid rgba(211, 211, 211, 0.082);
+}
+
+.circle{
+  background-color: gray;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}

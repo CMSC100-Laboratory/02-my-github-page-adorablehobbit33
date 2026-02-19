@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Embed Fonts -->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU+Guides&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main-style.css">
+    <link rel="icon" type="image/jpeg" href="./db/image-1.jpg">
+    <script src="https://kit.fontawesome.com/2bd7bb3d9c.js" crossorigin="anonymous"></script> <!-- Import Fonts -->
+    <title>Hobbit AI</title>
+</head>
+<body>
+    <div id="left-content-container">
+        <nav class="nav-bar card-style">
+            <div class="left-section">
+                <a href="./index.html">
+                    <i class="fa-solid fa-house" style="color: white; background-color: #333333;"></i>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-circle-user" style="color: #cbcbcb;"></i>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-inbox" style="color: #cbcbcb;"></i>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-cloud" style="color: #cbcbcb;"></i>
+                </a>
+            </div>
+            <div class="right-section">
+                <a href="https://www.linkedin.com/in/jericko-bacar-659189343/">
+                    <div class="hire-me">
+                        <div class="circle"></div>
+                        <h3>Hire Me</h3>
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <main class="card-style" id="left-main-content">
+            <div style="display: flex; flex-direction: row; justify-content: space-between; padding: 0 15px;">
+                <div class="work-title">
+                    <div class="circle" style="width: 5px; height: 5px;"></div>
+                    <h4>Full Stack Developer</h4>
+                </div>
+                <div class="available-for-work">
+                    <div class="circle" style="background-color: #198457; width: 5px; height: 5px;"></div>
+                    <h5 style="color: #198457;">AVAILABLE FOR WORK</h5>
+                </div>
+            </div>
+            <div class="profile-container">
+                <div class="profile-details">
+                    <h3 class="ubuntu-medium" style="font-size: 30px;">I'm Jericko Bacar</h3>
+                    <p>Full Stack Developer from Manila, Philippines.</p>
+                    <p>Currently studying at UP Los Baños.</p>
+                    <div class="hire-me-and-copy-email">
+                        <a href="https://www.linkedin.com/in/jericko-bacar-659189343/">
+                            <div class="hire-me">
+                                <div class="circle" style="width: 10px; height: 10px;"></div>
+                            <h3>Hire Me</h3>
+                        </a>
+                        </div>
+                        <div class="copy-email" id="copy-email">
+                            <div class="circle" style="width: 10px; height: 10px;"></div>
+                            <h3 style="font-size: 12px;">Copy Email</h3>
+                        </div>
+                    </div>
+
+                <script>
+                    // Elements
+                    const copyEmail = document.getElementById('copy-email');
+                    const text = "jbbacar1@up.edu.ph";
+
+                    // Click event, async
+                    copyEmail.addEventListener('click', async () => {
+                        try {
+                            // Write the email to the clipboard
+                            await navigator.clipboard.writeText(text);
+                            console.log('Text copied to clipboard successfully!');
+                        } catch (err) {
+                            console.error('Failed to copy text: ', err);
+                            // Handle cases where the Clipboard API is not available (e.g., HTTP sites)
+                            fallbackCopyTextToClipboard(text);
+                        }
+                    });
+                </script>
+                
+                </div>
+                <img src="db/image-1.jpg" alt="Profile" 
+                    style=  "height: 150px; width: 150px;
+                            border-radius: 50%;
+                    object-position: center bottom; 
+                            object-fit: cover;
+                    flex-shrink: 0">
+            </div>
+            <div class="projects-container">
+                <div class="projects-header">
+                    <div class="work-title">
+                        <div class="circle" style="width: 5px; height: 5px;"></div>
+                        <h4 style="margin: 0;">Projects</h4>
+                    </div>
+                    <div class="hire-me">
+                        <h4 style="margin: 7px 0; font-size: 12px;">View All</h4>
+                        <i class="fa-solid fa-arrow-right" style="color: #cbcbcb; font-size: 12px;"></i>    
+                    </div>
+                </div>
+                <div class="projects-summary">
+                    <a href="https://adorablehobbit.github.io/keybr-clone/" class="individual-projects">
+                        <img src="./db/keybr-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="keybr"></img>
+                        <div class="individual-projects-description">
+                            <h4>Typing Game</h4>
+                            <p style="color: #cbcbcb;">A game where you complete a set of words. Using HTML, CSS, JS.</p>
+                        </div>
+                        <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                    </a>
+                    <a href="https://adorablehobbit.github.io/icoclaspinas/" class="individual-projects">
+                        <img src="./db/icoc-ph.jpg" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="icocph"></img>
+                        <div class="individual-projects-description">
+                            <h4>ICOC PH Website</h4>
+                            <p style="color: #cbcbcb;">A mock website of my Church. Using HTML, CSS, JS.</p>
+                        </div>
+                        <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                    </a>
+                    <a href="" class="individual-projects">
+                        <img src="./db/python-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="python"></img>
+                        <div class="individual-projects-description">
+                            <h4>Typing Game</h4>
+                            <p style="color: #cbcbcb;">A terminal based game where you complete a set of phrases. A leaderboard with persistence. Using Python.</p>
+                        </div>
+                        <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="right-content-container">
+        <div class="right-home">
+            <div style="display: flex; flex-direction: column; justify-content: space-between; padding: 0 15px;">
+                <div class="general-title" style="display: flex; justify-content: start;">
+                    <div class="circle" style="width: 5px; height: 5px;"></div>
+                    <h4>Currently Active</h4>
+                </div>
+                <div class="projects-container">
+                    <div class="projects-summary">
+                        <a href="" class="individual-projects">
+                            <img src="./db/flutter-img.jpg" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="flutter"></img>
+                            <div class="individual-projects-description">
+                                <h4>Mobile Development</h4>
+                                <p style="color: #cbcbcb;">Dart, Flutter</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                        </a>
+                        <a href="" class="individual-projects">
+                            <img src="./db/web-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="web"></img>
+                            <div class="individual-projects-description">
+                                <h4>Web Development</h4>
+                                <p style="color: #cbcbcb;">MERN, Figma, Canva</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                        </a>
+                        <a href="" class="individual-projects">
+                            <img src="./db/assembly-img.jpg" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="asssembly"></img>
+                            <div class="individual-projects-description">
+                                <h4>Machine-level Programming</h4>
+                                <p style="color: #cbcbcb;">Assembly</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-programming-languages">
+            <div style="display: flex; flex-direction: column; justify-content: space-between; align-items: start; padding: 0 15px;">
+                <div class="general-title">
+                    <div class="circle" style="width: 5px; height: 5px;"></div>
+                    <h4>Programming Languages</h4>
+                </div>
+            </div>
+            <div class="list-container">
+                <img src="./db/python-img.png" alt="python">
+                <img src="./db/js-img.png" alt="javascript">
+                <img src="./db/c-img.png" alt="c">
+                <img src="./db/r-img.png" alt="r">
+                <img src="./db/java-img.png" alt="java">
+            </div>
+        </div>
+        <div class="right-skills">
+            <div style="display: flex; flex-direction: column; justify-content: space-between; padding: 0 15px;">
+                <div class="general-title" style="display: flex; justify-content: start;">
+                    <div class="circle" style="width: 5px; height: 5px;"></div>
+                    <h4>Skills</h4>
+                </div>
+                <div class="projects-container">
+                    <div class="projects-summary">
+                        <a href="" class="individual-projects">
+                            <img src="./db/google-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="google"></img>
+                            <div class="individual-projects-description">
+                                <h4>Google Workspace</h4>
+                                <p style="color: #cbcbcb;">Drive, Docs, Sheets, Slides (With extension/Plug-in automation)</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                        </a>
+                        <a href="" class="individual-projects">
+                            <img src="./db/bandlab-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="bandlab"></img>
+                            <div class="individual-projects-description">
+                                <h4>Music Production</h4>
+                                <p style="color: #cbcbcb;">Bandlab</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                        </a>
+                        <a href="" class="individual-projects">
+                            <img src="./db/ai-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="ai"></img>
+                            <div class="individual-projects-description">
+                                <h4>Prompt Engineering</h4>
+                                <p style="color: #cbcbcb;">ChatGPT, CursorAI, GeminiAI</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-projects">
+            <div style="display: flex; flex-direction: column; justify-content: space-between; padding: 0 15px;">
+                <div class="general-title" style="display: flex; justify-content: start;">
+                    <div class="circle" style="width: 5px; height: 5px;"></div>
+                    <h4>Projects</h4>
+                </div>
+                <div class="projects-container">
+                    <div class="projects-summary">
+                        <a href="https://adorablehobbit.github.io/keybr-clone/" class="individual-projects">
+                            <img src="./db/keybr-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="keybr"></img>
+                            <div class="individual-projects-description">
+                                <h4>Typing Game</h4>
+                                <p style="color: #cbcbcb;">A game where you complete a set of words. Using HTML, CSS, JS.</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                        </a>
+                        <a href="https://adorablehobbit.github.io/icoclaspinas/" class="individual-projects">
+                            <img src="./db/icoc-ph.jpg" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="icoc"></img>
+                            <div class="individual-projects-description">
+                                <h4>ICOC PH Website</h4>
+                                <p style="color: #cbcbcb;">A mock website of my Church. Using HTML, CSS, JS.</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                        </a>
+                        <a href="" class="individual-projects">
+                            <img src="./db/python-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="python"></img>
+                            <div class="individual-projects-description">
+                                <h4>Typing Game</h4>
+                                <p style="color: #cbcbcb;">A terminal based game where you complete a set of phrases. A leaderboard with persistence. Using Python.</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                        </a>
+                        <a href="" class="individual-projects">
+                            <img src="./db/cafe-img.jpg" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="cafe"></img>
+                            <div class="individual-projects-description">
+                                <h4>Online Cafe System</h4>
+                                <p style="color: #cbcbcb;">An online system that simulates a real-life cafe. Using Java.</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                        </a>
+                        <a href="" class="individual-projects">
+                            <img src="./db/r-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="r"></img>
+                            <div class="individual-projects-description">
+                                <h4>Project Mitigation</h4>
+                                <p style="color: #cbcbcb;">A program where you select different projects to see if it is feasible. Using R and Rshiny.</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-profile">
+            <div style="display: flex; flex-direction: column; justify-content: space-between; padding: 0 15px;">
+                <div class="general-title" style="display: flex; justify-content: start;">
+                    <div class="circle" style="width: 5px; height: 5px;"></div>
+                    <h4>Get to know who I am</h4>
+                </div>
+                <div class="projects-container">
+                    <div class="projects-summary">
+                        <a href="https://uplb.edu.ph/" class="individual-projects">
+                            <img src="./db/image-1.jpg" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="jericko"></img>
+                            <div class="individual-projects-description">
+                                <h4>Student</h4>
+                                <p style="color: #cbcbcb;">BS Computer Science | University of the Philippines Los Baños</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                        </a>
+                        <a href="https://adorablehobbit.github.io/icoclaspinas/" class="individual-projects">
+                            <img src="./db/icoc-ph.jpg" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="icoc"></img>
+                            <div class="individual-projects-description">
+                                <h4>Tech & Music Committee </h4>
+                                <p style="color: #cbcbcb;">ICOC Philippines</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                        </a>
+                        <a href="https://www.acssuplb.org/" class="individual-projects">
+                            <img src="./db/acss-img.jpg" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="acss"></img>
+                            <div class="individual-projects-description">
+                                <h4>Academic Committee</h4>
+                                <p style="color: #cbcbcb;">ACSS of UPLB</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                        </a>
+                        <a href="https://upsilakbo.wordpress.com/" class="individual-projects">
+                            <img src="./db/silakbo-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="silakbo"></img>
+                            <div class="individual-projects-description">
+                                <h4>Guitarist</h4>
+                                <p style="color: #cbcbcb;">UP Silakbo</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-profile">
+            <div style="display: flex; flex-direction: column; justify-content: space-between; padding: 0 15px;">
+                <div class="general-title" style="display: flex; justify-content: start;">
+                    <div class="circle" style="width: 5px; height: 5px;"></div>
+                    <h4>Want to avail my services?</h4>
+                </div>
+                <div class="projects-container">
+                    <div class="projects-summary">
+                        <a href="" class="individual-projects">
+                            <img src="./db/web-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="web"></img>
+                            <div class="individual-projects-description">
+                                <h4>Web Development</h4>
+                                <p style="color: #cbcbcb;">HTML, CSS, JS</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                        </a>
+                        <a href="" class="individual-projects">
+                            <img src="./db/python-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="python"></img>
+                            <div class="individual-projects-description">
+                                <h4>Game Development</h4>
+                                <p style="color: #cbcbcb;">Python, Tkinter</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                        </a>
+                        <a href="" class="individual-projects">
+                            <img src="./db/r-img.png" class="circle" style="height: 50px; width: 50px; margin: 10px 0;" alt="r"></img>
+                            <div class="individual-projects-description">
+                                <h4>Data Analytics</h4>
+                                <p style="color: #cbcbcb;">R, Python</p>
+                            </div>
+                            <i class="fa-solid fa-angle-right projects-arrow" style="color: #cbcbcb; margin: 0;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
